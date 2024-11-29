@@ -1,11 +1,11 @@
 class Car:
     def __init__(self, model: str, vin: int, numbers: str):
+        self.__is_valid_vin()
+        self.__is_valid_numbers()
         self.model = model
         self.__vin = vin
         self.__numbers = numbers
-        self.__is_valid_vin()
-        self.__is_valid_numbers()
-
+    
     def __is_valid_vin(self):
         if not isinstance(self.__vin, int):
             raise IncorrectVinNumber("Некорректный тип vin номер")
