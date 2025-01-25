@@ -10,9 +10,7 @@ button2 = KeyboardButton(text = "Информация")
 keyboard.add(button1)
 keyboard.add(button2)
 
-
-
-api = "7716483351:AAGc_uguGtYh9DpuW0Tsix3RKgIU20r1GdA"
+api = ""
 bot = Bot(token = api)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
